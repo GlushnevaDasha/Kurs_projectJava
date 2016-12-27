@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<%!public String getOrdering(Ordering ordering){
+    return ordering.getID() + " " + ordering.getDate_Ordering()+ " " + ordering.getID_client()
+            + " " + ordering.getID_Product()+ " " + ordering.getQuantity()+ " " + ordering.getID_Employee();}%>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <head>
+       <!-- <title>Добавление клиента</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div>Добавление клиента</div>
+        <h:form>
+      <!-- <p:inputText value="#{clientBean.name}"></p:inputText>
+            <p:inputText value="#{clientBean.surname}"></p:inputText>
+            <p:inputText value="#{clientBean.middlename}"></p:inputText>
+            <p:inputText value="#{clientBean.nameCompany}"></p:inputText>
+            <p:inputText value="#{clientBean.legalData}"></p:inputText>
+            <h:commandButton value="Добавить" action="#{clientBean.insert()}"/> -->
+        </h:form>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Kurs_project_RPS">
+    <Resource name="jdbc/Company"
+              auth="Container" type="javax.sql.DataSource"
+              maxActive="100" maxIdle="30" maxWait="10000"
+              username="root" password="root"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/company"/>
+
+    <Realm className="org.apache.catalina.realm.JDBCRealm" driverName="com.mysql.jdbc.Driver"
+        name="Company" type="javax.sql.DataSource"
+        connectionURL="jdbc:mysql://localhost:3306/company" 
+        connectionName="root" connectionPassword="root" 
+        userTable="user" userNameCol="Login" userCredCol="password"
+        userRoleTable="role" roleNameCol="Namerole"
+        auth="Container" maxTotal="100" maxIdle="30" maxWaitMillis="10000"/> 
+</Context>
+

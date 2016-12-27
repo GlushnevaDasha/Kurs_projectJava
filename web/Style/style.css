@@ -1,0 +1,9 @@
+.header {
+    width: 100%;
+    color: #FF0000;
+    background-image:url(../Image/logo.png);
+/*    background-image:url(C:\Users\Даша\Documents\NetBeansProjects\Kurs_project_RPS\web\Image\logo.png);*/
+    background-repeat: repeat-y;
+    background-position: 186px 76px;
+}
+
